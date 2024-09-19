@@ -1,9 +1,9 @@
 ## **eddytester**
-- **[[eddytester_telegram | telegram]]**
-- **[[eddytester_youtube | YouTube]]**
-- **[[eddytester_youtube | instagram]]**
+- **[[eddytester telegram | Telegram]]**
+- **[[eddytester youtube| YouTube]]**
+- **[[eddytester instagram| instagram]]**
 
 ## **iterka**
-- **[[iterka_telegram|telegram]]**
-- **[[iterka_youtube|YouTube]]**
+- **[[iterka telegram|telegram]]**
+- **[[iterka youtube|YouTube]]**
 - 
