@@ -6,6 +6,7 @@ dv.taskList(dv.pages().file.tasks
   .where(t => t.text.includes("23 September 2024")))
 ```
 # Журнал
-[[/personal/{{date}}]]
+[[vault/personal/{{date}}]]
+
 
 
