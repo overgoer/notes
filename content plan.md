@@ -1,12 +1,13 @@
 ## **eddytester**
-- **[[eddytester telegram | Telegram]]**
-- **[[eddytester youtube| YouTube]]**
-- **[[eddytester instagram| instagram]]**
+- **[[etg| Telegram]]**
+- **[[eyt| YouTube]]**
+- **[[einst| instagram]]**
 
 ## **iterka**
-- **[[iterka telegram|telegram]]**
-- **[[iterka youtube|YouTube]]**
+- **[[itg|telegram]]**
+- **[[iyt|YouTube]]**
 
 # идеи
 - [ ]  обзор резюме📅 2024-09-24 
 - [ ] Базовые функции postman📅 2024-09-24 #postman
+- [ ] 
