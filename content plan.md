@@ -6,4 +6,5 @@
 ## **iterka**
 - **[[iterka telegram|telegram]]**
 - **[[iterka youtube|YouTube]]**
-- 
+
+# идеи
