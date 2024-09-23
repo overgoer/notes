@@ -1,4 +1,5 @@
-[[vault/iterka/Домклик]]
+[[iterka/guests/домклик|домклик]]
+
 
 
 
