@@ -8,7 +8,6 @@ dv.taskList(dv.pages().file.tasks
 
 ```dataviewjs
 dv.taskList(dv.pages().file.tasks 
-  .where(t => !t.completed)
-  SORT file.name desc)
+  .where(t => !t.completed))
 ```
 # Журнал
