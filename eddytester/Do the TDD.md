@@ -1,4 +1,4 @@
-Sampling many customer organizations, I can't help but to note a customer theme we aren't answering well. The question is if we are doing test-driven development.
+Smpling many customer organizations, I can't help but to note a customer theme we aren't answering well. The question is if we are doing test-driven development.
 
 A lot of us know what it is. We usually have learned to recognize it as possibly two different patterns: 
 
