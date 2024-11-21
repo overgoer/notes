@@ -16,8 +16,8 @@
 ### Книги
 - [[Neil_Madden_API_Security_in_Action_Manning_Publications_2020.pdf]]
 - [[Book - O'Reilly REST API Design Rulebook.pdf]]
-- "Designing Web APIs" - Brenda Jin
-- "Build APIs You Won't Hate" - Phil Sturgeon
+- [[Designing Web APIs_ Building APIs That Developers Love ( PDFDrive ).pdf]]
+- ![[Phil Sturgeon - Build APIs You Won’t Hate.pdf]]
 
 ### Блоги про безопасность и дизайн
 - [Troy Hunt](https://www.troyhunt.com/) - безопасность
