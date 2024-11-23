@@ -48,7 +48,7 @@
   + Limit/offset: ?limit=10&offset=20
   + Page/perPage: ?page=2&perPage=20
 
---- 
+---
 
 ### Проверки пагинации ✅
 
@@ -83,7 +83,6 @@
 + Proxy cache: кеширование на промежуточных серверах 🌐
 + Server cache: кеширование на уровне API 🖧
 + Управление через заголовки: 🎛️
-
 ```
 Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache 
@@ -99,13 +98,11 @@ Expires: 0
 GET /api/files?file=report.pdf  // норм
 GET /api/files?file=../../../etc/passwd  // атака 
 ```
-
 + XSS через параметры: 💀 
 ```
 GET /api/search?q=телефон  // норм
 GET /api/search?q=<script>alert(1)</script>  // атака
 ```
-
 + SQL-инъекции в параметрах: ☠️
 ```  
 GET /api/users?id=1  // норм
