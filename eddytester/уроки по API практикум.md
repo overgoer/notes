@@ -68,3 +68,4 @@ body {
 ---
 # 3. API и HTTP
 ![[Pasted image 20250709224039.png]]
+---
