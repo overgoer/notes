@@ -106,18 +106,7 @@ body {
 |Какие данные и права у нас для этого есть|заголовки, параметры, тело запроса|
 </div>
 ---
-```
-POST /echo/post/json HTTP/1.1
-Host: reqbin.com
-Content-Type: application/json
-
-{
-  "Id": 78912,
-  "Customer": "Jason Sweet",
-  "Quantity": 1,
-  "Price": 18.00
-}
-```
+![[Pasted image 20250710012810.png]]
 ---
 В нём мы чётко указываем:
 
