@@ -1,4 +1,8 @@
-
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+}
+</style>
 
 # 📌 1. Введение
 ## Ты узнаешь как
