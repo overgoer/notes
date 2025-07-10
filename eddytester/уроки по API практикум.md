@@ -79,6 +79,7 @@ body {
 
 ## HTTP запрос
 ## состоит из: <br>
+<span style="font-size: 0.7em">
 
 |           |                             |
 |--------------------------|--------------------------------------------|
@@ -86,7 +87,7 @@ body {
 | **Endpoint**             | К какому ресурсу обращаемся                |
 | **HTTP Method**          | Что хотим сделать с ресурсом               |
 | **Заголовки / Параметры / Тело запроса** | Какие данные и права у нас для этого есть |
-</div>
+</span></div>
 ---
 ## Пример запроса
 ![[Pasted image 20250710012810.png]]
@@ -98,7 +99,7 @@ body {
 командная строка на windows<br>
 вставь туда текст:
 
-#### `curl -H "User-Agent: CustomClient/1.0" https://example.com/about`
+>#### `curl -H "User-Agent: CustomClient/1.0" https://example.com/about`
 
 ---
 <div  align="left">
