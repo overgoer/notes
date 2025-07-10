@@ -1,6 +1,6 @@
 <style>
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 </style>
 
