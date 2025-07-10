@@ -67,7 +67,7 @@ body {
 # 🥳
 ---
 # 3. API и HTTP
-![[Pasted image 20250709224039.png]]
+![[Pasted image 20250709224039.png|500]]
 ---
 ### 📌 Что такое API
 <div  align="left">
