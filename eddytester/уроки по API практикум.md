@@ -117,8 +117,10 @@ body {
 
 #### `curl -H "User-Agent: CustomClient/1.0" https://example.com/about`
 
-
 ---
+## Инструмент не важен
+
+
 В нём мы чётко указываем:
 
 - над каким ресурсом работаем (например, `/users`)
