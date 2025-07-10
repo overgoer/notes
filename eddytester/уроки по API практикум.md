@@ -195,7 +195,7 @@ body {
 || | | | |
 |---|---|---|---|---|
 |`age`|` < 0  `|`0–17`|`17-65`|`>65`
-|`name`|`не валидно`|`minor`|`candidate`|retired|
+||`не валидно`|`minor`|`candidate`|retired|
 
 **<span style="color: red">- ∞ --- </span> <span style="color: lightgreen">0 ----- 17 </span>| <span style="color: skyblue">18 --------- 65</span> | <span style="color: orange">66 ----------- 100**</span>
 </span>
