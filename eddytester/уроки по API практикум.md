@@ -337,7 +337,8 @@ body {
 - ❌ У него **нет тела запроса**  
 - ✅ Все данные передаются через:
     + путь (`/users/1`)
-    + query-параметры (`?status=minor`)
+    + query-параметры (`?status=minor`).
+      > ? по английски называется query delimiter
     + заголовки (`Authorization`, `Accept`)
 
 ---
