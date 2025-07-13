@@ -196,7 +196,7 @@
 |`age`|` < 0  `|`0–17`|`17-65`|`>65`
 ||`не валидно`|`minor`|`candidate`|retired|
 
-**<span style="color: red">- ∞ --- </span> <span style="color: lightgreen">0 ----- 17 </span>| <span style="color: skyblue">18 --------- 65</span> | <span style="color: orange">66 ----------- 100**</span>
+<span style="color: red; font-size:1.5em">- ∞ -- </span> | <span style="color: lightgreen;font-size:1.5em">0 -- 17 </span>| <span style="color: skyblue;font-size:1.5em">18 -- 65</span> | <span style="color: orange;font-size:1.5em">66 --- +∞ </span>
 </span>
 ---
 ## ⚠️ Почему важно:
