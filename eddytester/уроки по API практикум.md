@@ -134,6 +134,12 @@
 > как правильно обращаться к серверу, чтобы работать с рессурсами
 </div>
 ---
+API
+https://habr.com/ru/articles/464261/
+
+JSON
+https://habr.com/ru/articles/554274/
+---
 
 <div  align="left">
 <br>
