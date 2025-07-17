@@ -258,6 +258,9 @@ https://habr.com/ru/articles/740026/
 |Верхняя граница|`120`, `999`, `"abc"`|обработка мусора и ошибок|
 </div>
 ---
+Что почитать<br>
+https://qarocks.ru/boundary-values-analysis
+---
 
 ## ✏️ Поле `name`<br>
 
