@@ -477,4 +477,5 @@ body {
 ---
 # Почитать
 
-[[https://www.geeksforgeeks.org/html/http-headers-content-type/ | geeksforgeeks.org/html/http-headers-content-type]]
+geeksforgeeks.org/html/http-headers-content-type
+developer.mozilla.org/ru/docs/Web/HTTP/Reference/Methods/POST
