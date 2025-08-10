@@ -236,6 +236,7 @@ https://habr.com/ru/articles/554274/
 
 https://habr.com/ru/articles/841538/
 https://habr.com/ru/articles/740026/
+https://qarocks.ru/boundary-values-analysis/
 
 ---
 ## 🧱 Граничные значения
