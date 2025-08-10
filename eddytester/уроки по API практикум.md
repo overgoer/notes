@@ -431,3 +431,8 @@ body {
     - **201 Created** (или 200 OK — тоже встречается)
         
     - тело ответа с созданным объектом или его ID
+
+---
+# Почитать
+
+[[https://www.geeksforgeeks.org/html/http-headers-content-type/ | geeksforgeeks.org/html/http-headers-content-type]]
