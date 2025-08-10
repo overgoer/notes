@@ -406,13 +406,12 @@ body {
 # Тест-кейс
 демонстрация Тест-кейса
 ---
----
 # Баг-репорт
 демонстрация баг-репорта
 ---
 
 # 📖
-# почитать:
+# почитать
 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET
 - https://www.w3schools.com/tags/ref_httpmethods.asp
