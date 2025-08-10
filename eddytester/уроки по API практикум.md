@@ -134,6 +134,9 @@
 > как правильно обращаться к серверу, чтобы работать с рессурсами
 </div>
 ---
+HTTP
+https://developer.mozilla.org/ru/docs/Web/HTTP/Guides/Messages
+
 API
 https://habr.com/ru/articles/464261/
 
