@@ -96,16 +96,6 @@
 ## Пример запроса
 ![[Pasted image 20250710012810.png]]
 ---
-## попробуй сам
-<div  align="left">
-
-терминал на mac OS<br>
-командная строка на windows<br>
-вставь туда текст:
-
->#### `curl -H "User-Agent: CustomClient/1.0" https://example.com/about`
-
----
 <div  align="left">
 
 ## Инструмент не важен
@@ -114,6 +104,16 @@
 - Terminal
 - DevTools
 ![[Pasted image 20250710232319.png]]
+---
+## Инструмент не важен
+<div  align="left">
+
+терминал на mac OS<br>
+командная строка на windows<br>
+вставь туда текст:
+
+>#### `curl -H "User-Agent: CustomClient/1.0" https://example.com/about`
+
 ---
 ### 📌 Что такое API
 <div  align="left">
