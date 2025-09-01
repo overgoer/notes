@@ -262,6 +262,7 @@ https://qarocks.ru/boundary-values-analysis/
 ---
 Что почитать<br>
 https://qarocks.ru/boundary-values-analysis
+https://habr.com/ru/articles/680980/
 ---
 
 ## ✏️ Поле `name`<br>
