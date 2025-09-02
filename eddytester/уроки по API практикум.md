@@ -454,9 +454,9 @@ body {
 - Запросить все ресурсы GET запросом
 ---
 # Почитать
-
-geeksforgeeks.org/html/http-headers-content-type
-developer.mozilla.org/ru/docs/Web/HTTP/Reference/Methods/POST
+<span style="font-size:23px">
+www.geeksforgeeks.org/html/http-headers-content-type
+www.developer.mozilla.org/ru/docs/Web/HTTP/Reference/Methods/POST
 ---
 # 📌 Метод GET /users
 + Получаем данные из API
