@@ -94,5 +94,5 @@ see great potential in channel iterka as IT is booming and entertainment + educa
 
 ambitions are high, lives in moscow, paying mortgage, renovating new flat, wants a cozy house with wife. needs help. ready to work and change. needs help systemizing life and enjoying challange.
 
-
+Ed enjoys philosophy, stoicism, epictetus , victor francl, likes thinking about his way of thinking, but mostly intagram wins attention. or youtube. this has to change.
 </User Input>
