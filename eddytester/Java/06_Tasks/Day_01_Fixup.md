@@ -114,7 +114,7 @@ Integer[] myArray = new Integer[5];   // объекты (обёртки)
 
 **for-each:**
 ```java
-for(Int i : String[]){
+for(Int i : arr){
 System.out.println(i);
 }
 
@@ -122,11 +122,9 @@ System.out.println(i);
 
 **классический for:**
 ```java
-for(Strin element : array){
-counter ++;
-}
+
 for (int i = 0; i<arr.length; i++){
-System.out.println(att[i]);
+System.out.println(arr[i]);
 }
 
 ```
@@ -137,16 +135,18 @@ System.out.println(att[i]);
 
 **Способ 1:**
 ```java
-
+int[] arr = new int[5];
 ```
 
 **Способ 2:**
 ```java
+Integer[] arr = new Integer[5];
 
 ```
 
 **Способ 3 (с инициализацией):**
 ```java
+Integer[] arr = new Integer{1,2,3,4,5}
 
 ```
 
