@@ -114,11 +114,20 @@ Integer[] myArray = new Integer[5];   // объекты (обёртки)
 
 **for-each:**
 ```java
+for(Int i : String[]){
+System.out.println(i);
+}
 
 ```
 
 **классический for:**
 ```java
+for(Strin element : array){
+counter ++;
+}
+for (int i = 0; i<arr.length; i++){
+System.out.println(att[i]);
+}
 
 ```
 
