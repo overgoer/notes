@@ -140,13 +140,13 @@ int[] arr = new int[5];
 
 **Способ 2:**
 ```java
-Integer[] arr = new Integer[5];
+int[] arr = new int[]{1,2,3,4,5};
 
 ```
 
 **Способ 3 (с инициализацией):**
 ```java
-Integer[] arr = new Integer{1,2,3,4,5}
+int[] arr = {1,2,3,4,5};
 
 ```
 
