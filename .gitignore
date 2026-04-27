@@ -5,3 +5,11 @@ __MACOSX
 .idea/
 .obsidian/workspace.json
 .obsidian/graph.json
+
+# VPN configs with secrets
+eddytester/setup_final.sh
+eddytester/setup_vpn_domain.sh
+eddytester/create_server_qrcodes.sh
+eddytester/vpn_configs/
+eddytester/vpn_configs_april_2026/
+.aider.chat.history.md
