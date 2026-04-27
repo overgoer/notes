@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VPN Status Monitor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body {
+            font-family: monospace;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .service {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .up {
+            border-left: 5px solid #28a745;
+        }
+        .down {
+            border-left: 5px solid #dc3545;
+        }
+        .service-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .status-item {
+            margin: 5px 0;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .status-up {
+            color: #28a745;
+        }
+        .status-down {
+            color: #dc3545;
+        }
+        .overall-status {
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .overall-up {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .overall-down {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        #last-update {
+            color: #999;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+        .ping-status {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <h1>📡 VPN Services Status Monitor</h1>
+    <div id="ping-status">Loading ping status...</div>
+    <div id="status">Loading services...</div>
+    <div id="last-update"></div>
+
+    <script>
+        async function loadStatus() {
+            try {
+                const response = await fetch('/status.json');
+                const data = await response.json();
+                let servicesHtml = '';
+                let pingHtml = '';
+
+                // Обработка ping статуса (отдельная структура)
+                if (data.ping) {
+                    const pingClass = data.ping.status ? 'up' : 'down';
+                    const pingText = data.ping.status ? '🟢 INTERNET CONNECTED' : '🔴 NO INTERNET';
+                    const pingStatusClass = data.ping.status ? 'status-up' : 'status-down';
+
+                    pingHtml = `<div class="ping-status ${pingClass}">
+                        <div class="service-name">🌐 INTERNET CONNECTIVITY</div>
+                        <div class="overall-status ${pingStatusClass}">${pingText}</div>
+                        <div class="status-item">Ping to 8.8.8.8: <span class="${data.ping.status ? 'status-up' : 'status-down'}">${data.ping.status ? '✅ Reachable' : '❌ Unreachable'}</span></div>
+                        <div class="timestamp">Last checked: ${new Date(data.ping.timestamp).toLocaleString()}</div>
+                    </div>`;
+                }
+
+                // Обработка сервисов VPN
+                for (const [name, info] of Object.entries(data)) {
+                    // Пропускаем ping, так как он уже обработан
+                    if (name === 'ping') continue;
+
+                    const overallClass = info.overall ? 'up' : 'down';
+                    const overallText = info.overall ? '🟢 OPERATIONAL' : '🔴 FAILED';
+                    const overallStatusClass = info.overall ? 'overall-up' : 'overall-down';
+
+                    servicesHtml += `<div class="service ${overallClass}">
+                        <div class="service-name">${name.toUpperCase()}</div>
+                        <div class="overall-status ${overallStatusClass}">${overallText}</div>
+                        <div class="status-item">Systemd: <span class="${info.systemd ? 'status-up' : 'status-down'}">${info.systemd ? (name === 'amneziawg' ? '<span style="cursor: pointer;" onclick="showAmneziaModal()">✅</span>' : '✅') : '❌'}</span></div>
+                        <div class="status-item">Port ${info.port}: <span class="${info.port ? 'status-up' : 'status-down'}">${info.port ? '✅ Listening' : '❌ Not listening'}</span></div>
+                        <div class="status-item">Connectivity: <span class="${info.connectivity ? 'status-up' : 'status-down'}">${info.connectivity ? '✅ Reachable' : '❌ Unreachable'}</span></div>
+                        <div class="timestamp">Last checked: ${new Date(info.timestamp).toLocaleString()}</div>
+                    </div>`;;
+                }
+
+                document.getElementById('ping-status').innerHTML = pingHtml;
+                document.getElementById('status').innerHTML = servicesHtml;
+                document.getElementById('last-update').textContent = `Last update: ${new Date().toLocaleString()}`;
+            } catch (error) {
+                document.getElementById('status').innerHTML = `<div class="service down">Error loading status: ${error.message}</div>`;
+            }
+        }
+
+        // Загрузить статус сразу
+        loadStatus();
+
+        // Обновлять каждые 30 секунд
+        setInterval(loadStatus, 30000);
+    </script>
+
+<!-- Modal for Amnezia config -->
+<div id="amnezia-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+    <div style="background-color: white; margin: 5% auto; padding: 20px; border-radius: 5px; width: 90%; max-width: 500px; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <h3 style="margin: 0;">AmneziaWG Client 1 Config</h3>
+            <button onclick="closeAmneziaModal()" style="background: none; border: none; font-size: 1.5em; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        
+        <div style="text-align: center; margin-bottom: 15px;">
+            <div id="qrcode-container">
+                <!-- QR code will be generated here -->
+            </div>
+            <div style="font-size: 0.8em; color: #666; margin-top: 5px;">
+                Scan with AmneziaVPN app
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <div style="font-weight: bold; margin-bottom: 5px;">Config text:</div>
+            <textarea id="amnezia-config-text" style="width: 100%; height: 150px; font-family: monospace; font-size: 0.9em; padding: 10px; border: 1px solid #ccc; border-radius: 3px; resize: vertical;" readonly></textarea>
+        </div>
+        
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+            <button onclick="copyAmneziaConfig()" style="padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer;">Copy Config</button>
+            <button onclick="closeAmneziaModal()" style="padding: 8px 15px; background: #6c757d; color: white; border: none; border-radius: 3px; cursor: pointer;">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// Store config globally
+const amneziaConfig = "[Interface]\nPrivateKey = GO9niXgcPj++A8Z7eRwsPxnff+D0N1gqB545teT62FU=\nAddress = 10.9.0.2/24\nDNS = 8.8.8.8, 1.1.1.1\n\n[Peer]\nPublicKey = kfNCzL0Q87Ct+ECGM5bJ81SX91mUI1dn+SsYXgUXOQ4=\nEndpoint = 217.144.185.210:51821\nAllowedIPs = 0.0.0.0/0\nPersistentKeepalive = 25\n\n# \u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043e\u0431\u0444\u0443\u0441\u043a\u0430\u0446\u0438\u0438 AmneziaWG\nObfuscation = on\nJunkPacketCount = 5\nJunkPacketMinSize = 0\nJunkPacketMaxSize = 1480\nInitPacketJunkSize = 0\nResponsePacketJunkSize = 0\nInitPacketMagicHeader = 0\nResponsePacketMagicHeader = 0\nUnderloadPacketMagicHeader = 0\nTransportPacketMagicHeader = 0\n";
+// Modal functions
+function showAmneziaModal() {
+    // Set config text
+    document.getElementById('amnezia-config-text').value = amneziaConfig;
+    
+    
+    const qrContainer = document.getElementById('qrcode-container');
+    qrContainer.innerHTML = '<img src="amnezia_qr.png" alt="QR Code" style="max-width: 200px; height: auto;">';
+    
+    // Show modal
+    document.getElementById('amnezia-modal').style.display = 'block';
+}
+function closeAmneziaModal() {
+    document.getElementById('amnezia-modal').style.display = 'none';
+}
+function copyAmneziaConfig() {
+    const textarea = document.getElementById('amnezia-config-text');
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile
+    try {
+        document.execCommand('copy');
+        // Visual feedback
+        const btn = event.target;
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.style.background = '#28a745';
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '#007bff';
+        }, 1500);
+    } catch (err) {
+        console.error('Copy failed:', err);
+    }
+}
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('amnezia-modal');
+    if (event.target === modal) {
+        closeAmneziaModal();
+    }
+}
+// Close with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeAmneziaModal();
+    }
+});
+</script>
+</body>
+</html>

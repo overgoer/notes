@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VPN Status Monitor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body {
+            font-family: monospace;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .service {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .up {
+            border-left: 5px solid #28a745;
+        }
+        .down {
+            border-left: 5px solid #dc3545;
+        }
+        .service-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .status-item {
+            margin: 5px 0;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .status-up {
+            color: #28a745;
+        }
+        .status-down {
+            color: #dc3545;
+        }
+        .overall-status {
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .overall-up {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .overall-down {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        #last-update {
+            color: #999;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+        .ping-status {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <h1>📡 VPN Services Status Monitor</h1>
+    <div id="ping-status">Loading ping status...</div>
+    <div id="status">Loading services...</div>
+    <div id="last-update"></div>
+
+    <script>
+        async function loadStatus() {
+            try {
+                const response = await fetch('/status.json');
+                const data = await response.json();
+                let servicesHtml = '';
+                let pingHtml = '';
+
+                // Обработка ping статуса (отдельная структура)
+                if (data.ping) {
+                    const pingClass = data.ping.status ? 'up' : 'down';
+                    const pingText = data.ping.status ? '🟢 INTERNET CONNECTED' : '🔴 NO INTERNET';
+                    const pingStatusClass = data.ping.status ? 'status-up' : 'status-down';
+
+                    pingHtml = `<div class="ping-status ${pingClass}">
+                        <div class="service-name">🌐 INTERNET CONNECTIVITY</div>
+                        <div class="overall-status ${pingStatusClass}">${pingText}</div>
+                        <div class="status-item">Ping to 8.8.8.8: <span class="${data.ping.status ? 'status-up' : 'status-down'}">${data.ping.status ? '✅ Reachable' : '❌ Unreachable'}</span></div>
+                        <div class="timestamp">Last checked: ${new Date(data.ping.timestamp).toLocaleString()}</div>
+                    </div>`;
+                }
+
+                // Обработка сервисов VPN
+                for (const [name, info] of Object.entries(data)) {
+                    // Пропускаем ping, так как он уже обработан
+                    if (name === 'ping') continue;
+
+                    const overallClass = info.overall ? 'up' : 'down';
+                    const overallText = info.overall ? '🟢 OPERATIONAL' : '🔴 FAILED';
+                    const overallStatusClass = info.overall ? 'overall-up' : 'overall-down';
+
+                    servicesHtml += `<div class="service ${overallClass}">
+                        <div class="service-name">${name.toUpperCase()}</div>
+                        <div class="overall-status ${overallStatusClass}">${overallText}</div>
+                        <div class="status-item">Systemd: <span class="${info.systemd ? 'status-up' : 'status-down'}">${info.systemd ? '✅ Running' : '❌ Stopped'}</span></div>
+                        <div class="status-item">Port ${info.port}: <span class="${info.port ? 'status-up' : 'status-down'}">${info.port ? '✅ Listening' : '❌ Not listening'}</span></div>
+                        <div class="status-item">Connectivity: <span class="${info.connectivity ? 'status-up' : 'status-down'}">${info.connectivity ? '✅ Reachable' : '❌ Unreachable'}</span></div>
+                        <div class="timestamp">Last checked: ${new Date(info.timestamp).toLocaleString()}</div>
+                    </div>`;
+                }
+
+                document.getElementById('ping-status').innerHTML = pingHtml;
+                document.getElementById('status').innerHTML = servicesHtml;
+                document.getElementById('last-update').textContent = `Last update: ${new Date().toLocaleString()}`;
+            } catch (error) {
+                document.getElementById('status').innerHTML = `<div class="service down">Error loading status: ${error.message}</div>`;
+            }
+        }
+
+        // Загрузить статус сразу
+        loadStatus();
+
+        // Обновлять каждые 30 секунд
+        setInterval(loadStatus, 30000);
+    </script>
+</body>
+</html>

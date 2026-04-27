@@ -1,0 +1,1 @@
+vless://25a3a542-20bd-4885-be9d-86813acdd623@217.144.185.210:443?flow=xtls-rprx-vision&encryption=none&security=reality&pbk=3/wrNXs3QnGJudD2oKZNZOhVbRvQFjWOZbd60c1KJR4=&sni=vkvideo.ru&fp=chrome&type=http&path=/api/v1/update&mode=packet-up#Xray+Reality
