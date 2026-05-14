@@ -59,6 +59,26 @@ WHY: The angle is specific, grounded in a famous real-world breach, and offers c
 
 ---
 
+## Post Draft (Style Adapter)
+
+Ты тестируешь поиск товаров. В ответе нет сырых данных — только "найдено" или "не найдено". Сортировка по цене работает, но саму базу данных не видно. Как найти SQL-инъекцию, когда сервер молчит?
+
+Equifax в 2017 году утекли 147 миллионов записей именно так — через поисковый запрос без прямого вывода данных. Уязвимость нашли по косвенным признакам. Вот два метода для ручного теста без доступа к серверу.
+
+Первый — CASE WHEN в ORDER BY. Вставляешь в параметр сортировки конструкцию вроде `CASE WHEN (SELECT substring(password,1,1) FROM users LIMIT 1)='a' THEN 1 ELSE 2 END`. Если условие истинно — порядок строк один, если ложно — другой. Меняя букву в условии, можно "угадать" пароль посимвольно, даже не видя его, только по порядку результатов запроса.
+
+Второй — timing-based (слепая инъекция по времени). Если сервер не меняет тело ответа, используй sleep: `' OR IF(1=1, SLEEP(5), 0) --`. Задержка ответа на 5 секунд — инъекция сработала. Подходит для WHERE, UPDATE, INSERT.
+
+**Почему это важно:** ORDER BY часто не экранируют, считая его безопасным. Но он так же опасен, как WHERE. Любая строка, которая попадает в SQL-запрос — потенциальная дыра.
+
+**Verdict:** баг. Фикс — параметризация запросов (prepared statements, отделяющие код от данных). Если сервер выполняет произвольный SQL, значит уязвимость есть.
+
+**Реалы:** Blind SQLi — нудная техника, но именно так взломали Equifax. Тайминги sleep на проде могут вызвать ДДОС, используй 1-2 секунды. И не все знают, что ORDER BY — тоже поверхность атаки, так что твой репорт может удивить разработчика.
+
+**Полезно:** [PortSwigger: Blind SQLi](https://portswigger.net/web-security/sql-injection/blind), [OWASP: Testing for SQL Injection](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection.html)
+
+---
+
 ## Research Brief
 
 Тема: Security testing for manual QA: SQL injection, XSS, CSRF — real cases and checklists
