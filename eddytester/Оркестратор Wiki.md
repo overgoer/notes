@@ -86,16 +86,16 @@ flowchart LR
 
 ## Кроны
 
-| Расписание (MSK) | Команда | Ответственный |
-|---|---|---|
-| 08:00 ежедневно | `digest_agent.py` | Ежедневный дайджест |
-| 09:00 ПН | `api_scout.py --repo v0-test-api` | API Scout |
-| 09:00 СР | `api_scout.py --repo free-trial-api` | API Scout |
-| 09:00 ПТ | `api_scout.py --repo api-practicum-bot` | API Scout + News Agent |
-| 09:00 ВС | `bsa_agent.py` | Стратегический аудит |
-| 09:00 СР | `bsa_agent.py --auto-finalize` | Авто-финализация BSA |
-| Каждые 2 дня | Content Manager (ресерч) | Контент-цикл |
-| Каждые 30 мин | `gateway.py check_mail` | Проверка команд |
+| Расписание (MSK) | Команда                                 | Ответственный          |
+| ---------------- | --------------------------------------- | ---------------------- |
+| 08:00 ежедневно  | `digest_agent.py`                       | Ежедневный дайджест    |
+| 09:00 ПН         | `api_scout.py --repo v0-test-api`       | API Scout              |
+| 09:00 СР         | `api_scout.py --repo free-trial-api`    | API Scout              |
+| 09:00 ПТ         | `api_scout.py --repo api-practicum-bot` | API Scout + News Agent |
+| 09:00 ВС         | `bsa_agent.py`                          | Стратегический аудит   |
+| 09:00 СР         | `bsa_agent.py --auto-finalize`          | Авто-финализация BSA   |
+| Каждые 2 дня     | Content Manager (ресерч)                | Контент-цикл           |
+| Каждые 30 мин    | `gateway.py check_mail`                 | Проверка команд        |
 
 ---
 
