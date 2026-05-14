@@ -3,8 +3,7 @@ __MACOSX
 .aider.tags.cache.v4
 .claude/
 .idea/
-.obsidian/workspace.json
-.obsidian/graph.json
+.obsidian/
 
 # VPN configs with secrets
 eddytester/setup_final.sh

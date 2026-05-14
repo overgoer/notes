@@ -1,0 +1,11 @@
+# Obsidian
+.obsidian/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+*secret*
+*secrets*
