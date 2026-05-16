@@ -42,4 +42,5 @@ Content-Type: application/json
 
 В работе:
 🔄 а еще нужен разбор чтобы запостить через час как обещано (взято 13:18)
+🔄 тест listener trigger mode (взято 13:19)
 
