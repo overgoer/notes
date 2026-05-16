@@ -35,12 +35,10 @@ Content-Type: application/json
   
 а еще нужен разбор чтобы запостить через час как обещано!
 
-
-тест listener trigger mode!
+тест listener BSA cycle!
 
 -----статус BSA-----
 
 В работе:
 🔄 а еще нужен разбор чтобы запостить через час как обещано (взято 13:18)
-🔄 тест listener trigger mode (взято 13:19)
 
