@@ -37,6 +37,8 @@ Content-Type: application/json
 
 тест listener BSA cycle!
 
+тест merge status preservation!
+
 -----статус BSA-----
 
 В работе:
