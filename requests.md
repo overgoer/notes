@@ -37,8 +37,6 @@ Content-Type: application/json
 
 тест listener BSA cycle!
 
-тест merge status preservation!
-
 -----статус BSA-----
 
 В работе:
@@ -47,4 +45,6 @@ Content-Type: application/json
 Готово:
 ✅ Улучшение поста про POST без тела + разбор → `/root/obsidian-vault/eddytester/Стратегия/Улучшение поста POST без тела + разбор.md`
 ✅ тест listener BSA cycle → пройден
+✅ тест merge status preservation → пройден
+✅ разбор поста POST без тела (завершён BSA) → файл содержит готовый разбор для публикации через час
 
