@@ -9,6 +9,8 @@
 Готово:
 ✅ аудит всех доков Obsidian + notes_review + researcher по системе контент-менеджмента → создан `notes_review.md`. Полный аудит 65+ файлов. Оценка: 6.5/10. Target structure: папки TG → YouTube → Instagram. Researcher упал (venv сломан). 10 правил + 6 немедленных действий.
 
+*последнее обновление: 23:14*
+
 -----контекст задач-----
 
 аудит всех доков Obsidian + notes_review + researcher по системе контент-менеджмента
