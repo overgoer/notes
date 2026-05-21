@@ -14,8 +14,8 @@ category: other
 
 ## Analysis
 
-Не предоставлен текст поста для анализа.
+Ошибка анализа: Expecting value: line 1 column 1 (char 0)
 
 ## Why Works
 
-Невозможно определить без текста.
+Причина не определена
