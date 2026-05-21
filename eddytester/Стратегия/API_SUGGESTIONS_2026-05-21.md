@@ -1,61 +1,61 @@
 # 🏗 API Improvement Suggestions — 2026-05-21
 
-**Сгенерировано:** 2026-05-21 22:00
+**Сгенерировано:** 2026-05-21 22:03
 **Источник:** BSA API Bridge
 
 ---
 
-## 1. File upload endpoint with Zip Slip vulnerability
+## 1. Implement secure file upload endpoint
 
 **Репозиторий:** free-trial-api
 **Сложность:** P1
 
-**Триггер:** 2026-05-17: Testing file uploads: multipart forms, validation, size limits, security (Zip Slip)
+**Триггер:** 2026-05-17: Testing file uploads: multipart forms, validation, size limits, security
 
-**Описание:** Add POST /free/api/upload endpoint that accepts multipart file uploads (zip archives) with a known Zip Slip path traversal bug. The endpoint extracts files without sanitizing paths, allowing writing outside the target directory. Rate-limited per trial key.
+**Описание:** Add POST /free/api/upload endpoint that accepts multipart file uploads, validates file type and size, and implements zip-slip prevention (path traversal checks, symbolic link removal). Store files in a sandboxed directory with randomized names.
 
-**Стратегическая связь:** Learning: students can discover and fix a real security bug. Content: spawns posts on file upload testing, Zip Slip exploit, and security fixes. Popularization: high engagement via 'find the bug' format.
+**Стратегическая связь:** Teaches real-world security practices; provides content for a step-by-step bug fix post; attracts learners interested in API security.
 
-**Контент-угол:** We added a file upload endpoint with a dangerous Zip Slip vulnerability. Can you exploit it? Find the bug and submit a fix to earn credits.
+**Контент-угол:** Post: 'How I built a secure file upload API in 2 hours (and how you can break it)' — demo the endpoint, show zip-slip exploitation, then reveal the fix.
 
 **Бриф для content_manager:**
-> Заголовок: 'Мы специально сломали загрузку файлов. Найди уязвимость Zip Slip за 5 минут'. Угол: интерактивное обучение безопасности API. Ключевые точки: описание Zip Slip, как воспроизвести, как исправить, призыв прислать решение.
+> Title: Secure File Upload in Practice – Zip Slip Demo & Fix. Angle: Follow-along implementation with security pitfalls. Key points: multipart parsing, validation, path traversal prevention, symlink removal, sandboxing.
 
 ---
 
-## 2. Mock payment endpoint for testing payment flows
+## 2. Fix Free Trial API auth and add payment endpoint
 
 **Репозиторий:** free-trial-api
-**Сложность:** P1
+**Сложность:** P0
 
-**Триггер:** Backlog B-002: Платёжка (любая работающая) – monetization need and content about payment testing
+**Триггер:** Backlog B-001: Free Trial API broken auth; B-004: payment flow needed
 
-**Описание:** Add POST /free/api/payment endpoint that simulates a payment gateway. Accepts card number, amount, currency. Returns success for test card '4242 4242 4242 4242' and failure for others. Includes intentional bugs: wrong HTTP status code on success (201 instead of 200), missing idempotency key handling, and no validation for negative amount.
+**Описание:** Repair PostgreSQL authentication and /free/api/users endpoint (currently 404). Add POST /free/api/payment/create to generate a payment link (e.g., Telegram Stars or YooKassa) for full access. Return a payment URL and handle webhook for confirmation.
 
-**Стратегическая связь:** Monetization: prepares infrastructure for real payments. Learning: teaches payment API testing, idempotency, and validation. Content: posts about mocking payments, testing strategies, and finding bugs in payment logic.
+**Стратегическая связь:** Directly enables monetization; unblocks the entire free trial funnel; generates content about fixing a broken API and integrating payments.
 
-**Контент-угол:** New mock payment endpoint – try to break it! We've hidden bugs in the simulation. Test your payment integration skills and report issues.
+**Контент-угол:** Post: 'Turning a broken API into a payment gateway' — walk through debugging auth issues, then adding a simple payment flow. Shows real problem-solving and monetization.
 
 **Бриф для content_manager:**
-> Заголовок: 'Тестируем платежи: как не потерять деньги из-за бага в API'. Угол: практическое тестирование платежного шлюза. Ключевые точки: создание мока, тест-кейсы (успех, отказ, невалидные суммы), обнаруженные баги (статус, идемпотентность).
+> Title: From 404 to Payment: Fixing and Expanding Free Trial API. Angle: Real debugging journey. Key points: auth fix, endpoint creation, payment integration, webhook handling, testing the complete flow.
 
 ---
 
-## 3. Rate limit test endpoint with configurable limits
+## 3. Add bug-report challenge endpoint
 
-**Репозиторий:** free-trial-api
+**Репозиторий:** v0-test-api
 **Сложность:** P2
 
-**Триггер:** General need for API testing content; existing rate limiting in free-trial-api can be demonstrated via a dedicated endpoint
+**Триггер:** Backlog B-059: #post №4 Угадай баг 16 (quiz format); strategy: interactive learning
 
-**Описание:** Add GET /free/api/rate-limit-test that returns 200 OK for first 3 requests per trial key, then 429 Too Many Requests for subsequent requests within a 1-minute window. The limit and window can be overridden via query parameters (e.g., ?limit=1&window=5) for advanced testing.
+**Описание:** Add POST /challenges/submit that accepts a bug report (user's analysis). Also add GET /challenges/:id/feedback that returns automated feedback comparing user's answer with known bugs. Store submissions in DB for analytics.
 
-**Стратегическая связь:** Learning: hands-on experience with rate limiting headers (Retry-After), handling 429s, and designing retry logic. Content: posts on rate limiting best practices, testing strategies, and how to avoid being blocked.
+**Стратегическая связь:** Turns passive content into interactive learning; builds community engagement; provides data for future content and personalized learning paths.
 
-**Контент-угол:** Test your rate limiting handling with our dedicated endpoint – try different limits and windows to see how APIs protect themselves.
+**Контент-угол:** Post: 'I created an API that teaches you to find bugs — try it!' — launch the challenge endpoint, show how it works, and invite followers to submit their findings. Then follow up with results.
 
 **Бриф для content_manager:**
-> Заголовок: 'Как тестировать rate limiting: практическое руководство с нашим API'. Угол: обучение обработке 429 ошибок. Ключевые точки: настройка параметров, чтение Retry-After, реализация exponential backoff, тестирование с разными сценариями.
+> Title: Learn API Bug Hunting with This Interactive Challenge. Angle: Gamified learning. Key points: submission endpoint, automated feedback, leaderboard potential, integration with existing quiz posts.
 
 ---
 
