@@ -14,8 +14,8 @@ category: other
 
 ## Analysis
 
-Ошибка анализа: Expecting value: line 1 column 1 (char 0)
+Пост не предоставлен, анализ невозможен.
 
 ## Why Works
 
-Причина не определена
+Нет данных для оценки.
