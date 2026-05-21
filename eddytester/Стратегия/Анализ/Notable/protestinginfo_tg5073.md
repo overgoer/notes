@@ -2,7 +2,7 @@
 channel: @protestinginfo
 tg_post_id: 5073
 posted_at: 2026-05-12T15:07:07
-views: 1487
+views: 1491
 forwards: 173
 replies: 0
 category: other
@@ -14,8 +14,8 @@ category: other
 
 ## Analysis
 
-Ошибка анализа: Unterminated string starting at: line 2 column 15 (char 16)
+Сообщение не содержит сам пост для анализа, только указание контекста канала. Невозможно оценить содержание или вовлеченность аудитории.
 
 ## Why Works
 
-Причина не определена
+Пост отсутствует, поэтому нельзя определить причины его успеха или неудачи.
