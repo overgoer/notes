@@ -14,8 +14,8 @@ category: other
 
 ## Analysis
 
-Пост отсутствует, невозможно проанализировать.
+Ошибка анализа: Expecting value: line 1 column 1 (char 0)
 
 ## Why Works
 
-Нет данных для анализа.
+Причина не определена
