@@ -29,3 +29,7 @@
 | ? | 2026-05-21 | Implement secure file upload endpoint | free-trial-api | P1 | ⏳ предложено | — |
 | ? | 2026-05-21 | Fix Free Trial API auth and add payment endpoint | free-trial-api | P0 | ⏳ предложено | — |
 | ? | 2026-05-21 | Add bug-report challenge endpoint | v0-test-api | P2 | ⏳ предложено | — |
+
+| ? | 2026-05-23 | File Upload Endpoint with Security Demonstrations | v0-test-api | P1 | ⏳ предложено | — |
+| ? | 2026-05-23 | Strict Content-Type Validation Middleware | v0-test-api | P1 | ⏳ предложено | — |
+| ? | 2026-05-23 | Free Trial API: Add Usage Tracking and Balance Endpoint | free-trial-api | P0 | ⏳ предложено | — |
