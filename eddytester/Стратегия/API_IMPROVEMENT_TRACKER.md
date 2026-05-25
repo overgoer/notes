@@ -33,3 +33,7 @@
 | ? | 2026-05-23 | File Upload Endpoint with Security Demonstrations | v0-test-api | P1 | ⏳ предложено | — |
 | ? | 2026-05-23 | Strict Content-Type Validation Middleware | v0-test-api | P1 | ⏳ предложено | — |
 | ? | 2026-05-23 | Free Trial API: Add Usage Tracking and Balance Endpoint | free-trial-api | P0 | ⏳ предложено | — |
+
+| ? | 2026-05-25 | Fix Free Trial API Authentication and Trial Flow | free-trial-api | P0 | ⏳ предложено | — |
+| ? | 2026-05-25 | Add File Upload Endpoint with Zip Slip Protection | v0-test-api | P1 | ⏳ предложено | — |
+| ? | 2026-05-25 | Improve Error Messages and Input Validation for POST Endpoints | оба | P1 | ⏳ предложено | — |
