@@ -96,8 +96,8 @@
         "method": "GET",
         "header": [
           {
-            "key": "`X-Auth-Token",
-            "value": " admin_token_99`",
+            "key": "X-Auth-Token",
+            "value": "admin_token_99",
             "type": "text"
           }
         ],
@@ -135,8 +135,8 @@
             "method": "GET",
             "header": [
               {
-                "key": "`X-Auth-Token",
-                "value": " admin_token_99`",
+                "key": "X-Auth-Token",
+                "value": "admin_token_99",
                 "type": "text"
               }
             ],
@@ -262,7 +262,7 @@
       ]
     },
     {
-      "name": "New Request",
+      "name": "Cart Item (отрицательное quantity)",
       "request": {
         "method": "PATCH",
         "header": [],
@@ -356,15 +356,11 @@
   ],
   "variable": [
     {
-      "key": "url",
-      "value": "https://cd9a7c39-1e2e-4207-90d4-6a8287e76015.mock.pstmn.io"
+      "key": "baseUrl",
+      "value": "http://85.193.81.51:3000"
     },
     {
       "key": "userId",
-      "value": ""
-    },
-    {
-      "key": "baseUrl",
       "value": ""
     }
   ]
