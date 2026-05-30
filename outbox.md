@@ -37,6 +37,50 @@ GA: **WEAK** — нет конкретных данных из SearXNG. Тема
 
 **Ты:** ээ @serious_tester в 14 раз больше просмотров при схожем количестве постов. - а подписчиков у него сколько? давай по процентам все
 
+**Bizzy:** Ночной обход — фаза 1 завершён. Вот полный отчёт:
+
+---
+
+## ✅ Выполнено: 16 P3 scout задач
+
+| Задача | Тема | GA Рейтинг |
+|--------|------|------------|
+| B-051 | education (serious_tester) | WEAK |
+| B-052 | news (serious_tester) | WEAK |
+| B-053 | career (qa_and_it) | SKIP |
+| B-054 | other (qa_and_it) | **GOOD** |
+| B-055 | bugs (qa_and_it) | **🔥 MUST POST** |
+| B-087 | bugs (testerlib) | ✅ |
+| B-092 | guide (qa_and_it) | ✅ |
+| B-093 | API (burning_tester) | **🔥 MUST POST** |
+| B-094 | other (burning_tester) | SKIP |
+| B-095 | engagement (rvtsakunov) | ✅ |
+| B-096 | education (rvtsakunov) | **🔥 MUST POST** |
+| B-097 | API (rvtsakunov_manual) | GOOD |
+| B-098 | automation (qa_chillout) | SKIP |
+| B-099 | AI/LLM (qa_chillout) | GOOD |
+| B-100 | API (serious_tester) | ✅ |
+| B-101 | AI/LLM (serious_tester) | GOOD |
+| B-102 | API (qa_and_it) | **🔥 MUST POST** |
+| B-103 | AI/LLM (qa_and_it) | **🔥 MUST POST** |
+| B-104 | engagement (qa_and_it) | GOOD |
+| B-133 | guide (protestinginfo) | **🔥 MUST POST** |
+| B-134 | education (protestinginfo) | **🔥 MUST POST** |
+| B-135 | API (rvtsakunov) | ✅ |
+| B-136 | practicum/portfolio (testerlib) | **🔥 MUST POST** |
+
+## 🔴 Пропущено (ждут тебя)
+- **P1:** B-002, B-004 — нужен DeepSeek API ключ для PM агента
+- **P2:** B-007, B-012, B-056 — нужен доступ к коду; B-073 — нужен DeepSeek ключ
+- **P3:** B-008 (сериал 2/10) — нужен выбор версии
+- **B-106–B-130** — идеи без контекста
+
+## 📊 Итог бэклога
+**103 ✅ DONE · 32 🔄 в работе**
+
+Все сгенерированные посты сохранены в `/root/obsidian-vault/eddytester/Стратегия/Исследования/`. Топ для публикации: B-055, B-093, B-096, B-102, B-103, B-133, B-134, B-136 — все с рейтингом **MUST POST**. (2026-05-30 04:55)
+**Ты:** ээ @serious_tester в 14 раз больше просмотров при схожем количестве постов. - а подписчиков у него сколько? давай по процентам все
+
 **Bizzy:** Iteration limit reached. (2026-05-29 04:00)
 **Ты:** ээ @serious_tester в 14 раз больше просмотров при схожем количестве постов. - а подписчиков у него сколько? давай по процентам все
 
