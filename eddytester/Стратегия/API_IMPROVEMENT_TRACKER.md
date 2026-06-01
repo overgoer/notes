@@ -37,3 +37,7 @@
 | ? | 2026-05-25 | Fix Free Trial API Authentication and Trial Flow | free-trial-api | P0 | ⏳ предложено | — |
 | ? | 2026-05-25 | Add File Upload Endpoint with Zip Slip Protection | v0-test-api | P1 | ⏳ предложено | — |
 | ? | 2026-05-25 | Improve Error Messages and Input Validation for POST Endpoints | оба | P1 | ⏳ предложено | — |
+
+| ? | 2026-06-01 | File Upload Endpoint with Intentional Security Bugs | free-trial-api | P1 | ⏳ предложено | — |
+| ? | 2026-06-01 | JWT Authentication for Protected Routes | free-trial-api | P1 | ⏳ предложено | — |
+| ? | 2026-06-01 | User Stats Endpoint for Gamification and Analytics | free-trial-api | P2 | ⏳ предложено | — |
