@@ -41,3 +41,7 @@
 | ? | 2026-06-01 | File Upload Endpoint with Intentional Security Bugs | free-trial-api | P1 | ⏳ предложено | — |
 | ? | 2026-06-01 | JWT Authentication for Protected Routes | free-trial-api | P1 | ⏳ предложено | — |
 | ? | 2026-06-01 | User Stats Endpoint for Gamification and Analytics | free-trial-api | P2 | ⏳ предложено | — |
+
+| ? | 2026-06-03 | Payment Integration for Free Trial API | free-trial-api | P1 | ⏳ предложено | — |
+| ? | 2026-06-03 | Enhanced Bugs Endpoint with Filtering and Metadata | v0-test-api | P2 | ⏳ предложено | — |
+| ? | 2026-06-03 | Rate Limiting and Usage Statistics for Free Trial API | free-trial-api | P1 | ⏳ предложено | — |
