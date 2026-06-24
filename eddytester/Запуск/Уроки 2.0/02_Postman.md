@@ -47,7 +47,6 @@
 
 - [postman.com/downloads](https://www.postman.com/downloads/)
 - Windows / Mac / Linux — выбирай свою ОС
-- Бесплатной версии достаточно
 
 </div>
 </div>
@@ -56,24 +55,6 @@
 
 <div align="center">
   <span style="font-size: 100px;">⬇️</span>
-</div>
-
-<br>
-
-<div align="center">
-<div align="left">
-
-Установи как обычную программу. Это не сложнее чем поставить Telegram.
-
-</div>
-</div>
-
-<div align="center">
-<div align="left">
-
-Никакой регистрации пока не нужно. Просто открой.
-
-</div>
 </div>
 
 ---
@@ -87,25 +68,13 @@
 <br>
 
 <div align="center">
-<div align="left">
-
-1. Скачай JSON-файл с Яндекс.Диска: [Коллекция Postman (v1)](https://disk.yandex.com/d/ts51e5Tgh3ciYA)
-2. В Postman нажми **Import** (в левом верхнем углу)
-3. Перетащи скачанный JSON в окно импорта
-
-</div>
-</div>
-
-<br>
-
-<div align="center">
   <span style="font-size: 100px;">📦</span>
 </div>
 
 <div align="center">
 <div align="left">
 
-После импорта слева появится коллекция **V1 Candidates API**. Внутри — папки GET / POST / PATCH / DELETE.
+После импорта слева появится коллекция **V1 Candidates API**.
 
 </div>
 </div>
