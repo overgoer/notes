@@ -605,10 +605,6 @@ DELETE Reset DB → **Send**
 
 # 📤 ДЗ
 
-<div align="center">
-  <span style="font-size: 110px;">📤</span>
-</div>
-
 <br>
 
 <div align="center">
