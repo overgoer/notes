@@ -69,13 +69,12 @@ API не только "приносит данные".
 <div align="left" style="font-size: 1.1em">
 
 📱 **Клиент** (Postman)<br>
-	 &emsp;↳ ✉️ *HTTP Запрос ("Создай юзера")*<br>
+	 &emsp; ✉️ *HTTP Запрос ("Создай юзера")*<br>
        &emsp; &emsp;↳ ⚙️ **API** (Проверяет правила из Доки)<br>
           &emsp; &emsp; &emsp;↳ 💾 **База Данных** (Сохраняет)<br>
-          &emsp; &emsp; &emsp; &emsp;↲<br>
-     &emsp; &emsp; &emsp;↲ ✉️ *HTTP Ответ ("201 Created")*<br>
-   ↲<br>
-📱 **Клиент**<br>
+          &emsp; &emsp; &emsp; &emsp;↓<br>
+     &emsp; &emsp; &emsp;↓ ✉️ *HTTP Ответ ("201 Created")*<br>
+ &emsp; &emsp;📱 **Клиент**<br>
 </div>
 
 <!-- Note: 
