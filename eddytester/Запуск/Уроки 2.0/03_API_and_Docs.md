@@ -45,6 +45,20 @@ API не только "приносит данные".
 -->
 
 ---
+<div align="left" style="font-size: 1.1em">
+
+## 🧩 API: Расшифровка
+
+**Программный интерфейс приложения** <br>
+<span style="font-size: 0.8em">*(Application Programming Interface)*</span>
+
+- **А (Application — Приложение)**: создано, чтобы одна программа общалась с другой.
+- **P (Programming — Программный)**: используется при написании кода (машинами), а не при кликанье мышкой.
+- **I (Interface — Интерфейс)**: граница или пульт для взаимодействия.
+
+**Итог:** Интерфейс для общения программ между собой.
+
+---
 # 🧩 Как работает API
 ![[diagram-rest-postman-illustration.svg]]
 <div align="left" style="font-size: 1.1em">
