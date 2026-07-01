@@ -45,36 +45,9 @@ API не только "приносит данные".
 -->
 
 ---
-# 🧩 Как работает API (Вариант 1)
-
-<div align="center" style="font-size: 1.2em">
-
-📱 **Клиент** <br>
-<span style="font-size: 0.6em">(Postman, Браузер, Приложение)</span>
-<br> ⬇️ ⬆️ <br>
-⚙️ **API Сервер** <br>
-<span style="font-size: 0.6em">(Приложение с кодом. Принимает команды)</span>
-<br> ⬇️ ⬆️ <br>
-🗄️ **База Данных** <br>
-<span style="font-size: 0.6em">(Хранилище информации)</span>
-</div>
-
-<!-- Note: 
-Простая вертикальная схема. Показывает, что API - это мозг и прослойка между клиентом (мы) и глупым хранилищем.
--->
-
----
-# 🧩 Как работает API (Вариант 2)
-
+# 🧩 Как работает API
+![[diagram-rest-postman-illustration.svg]]
 <div align="left" style="font-size: 1.1em">
-
-📱 **Клиент** (Postman)<br>
-	 &emsp; ✉️ *HTTP Запрос ("Создай юзера")*<br>
-       &emsp; &emsp;↳ ⚙️ **API** (Проверяет правила из Доки)<br>
-          &emsp; &emsp; &emsp;↳ 💾 **База Данных** (Сохраняет)<br>
-          &emsp; &emsp; &emsp; &emsp;↓<br>
-     &emsp; &emsp; &emsp;↓ ✉️ *HTTP Ответ ("201 Created")*<br>
- &emsp; &emsp;📱 **Клиент**<br>
 </div>
 
 <!-- Note: 
