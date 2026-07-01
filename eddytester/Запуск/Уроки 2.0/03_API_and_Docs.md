@@ -49,11 +49,10 @@ API не только "приносит данные".
 
 ## 🧩 API: Расшифровка
 
-#### Прикладной Программный Интерфейс <br>
-<span style="font-size: 0.6em">
+##### Прикладной Программный Интерфейс <br>
 
-### Application Programming Interface
-</span>
+#### Application Programming Interface
+
 
 - **Application — Прикладной**: создано для программ которые решают задачи юзера
 - **Programming — Программный**: используется машинами.
