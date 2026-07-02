@@ -28,7 +28,8 @@
 
 ---
 Сервер - управленец <br>
-В нём вся логика API
+В нём вся логика API<br>
+![[server.jpg|400]]
 ---
 <div align="left" style="font-size: 1em">
 
