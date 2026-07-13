@@ -98,6 +98,12 @@ HyperText Transfer Protocol
 | **Body (Тело)** | Какие данные? | `{"name":"John1"}` |
 
 ---
+Протоколы передачи данных
+
+![Application Layer: OSI Model's User Interface](https://miro.medium.com/v2/resize:fit:1400/0*jycqScZs97UtsjDh.png | 600)
+
+---
+
 # 🎯 Итог
 
 1. Мы запаковали HTTP-запрос.
