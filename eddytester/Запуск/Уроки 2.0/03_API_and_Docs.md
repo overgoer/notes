@@ -79,7 +79,10 @@ HyperText Transfer Protocol
 # 🧩 Как работает API
 ![[diagram-rest-postman-illustration.svg]]
 ---
-### 📦 HTTP <br>(HyperText Transfer Protocol)
+<div align="left" style="font-size: 0.9em">
+
+### 📦 HTTP <br>HyperText Transfer Protocol <br>
+#### Протокол передачи гипертекста
 
 **API** - Какие действия можно делать на нашем сервере <br>
 **HTTP** - технический язык общения с сервером.<br><br><br>
@@ -100,7 +103,7 @@ HyperText Transfer Protocol
 ---
 Протоколы передачи данных
 
-![Application Layer: OSI Model's User Interface](https://miro.medium.com/v2/resize:fit:1400/0*jycqScZs97UtsjDh.png | 600)
+![14 Popular File Transfer Protocols For Business Explained](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_EWD2WV05YIwubEsUVueo6qi-xhfFepryRNiIAB0osQ&s=10)](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.softwaretestingmaterial.com%2Fpopular-file-transfer-protocols%2F&ved=0CBYQjRxqFwoTCOjBl8rR0JUDFQAAAAAdAAAAABA3&opi=89978449)
 
 ---
 
