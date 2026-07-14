@@ -38,6 +38,48 @@
 
 ---
 
+# 🖨️ Отобранные статьи на печать (2026-07-14)
+
+*Подборка из открытых источников. Вектор: самовытачивание vs «будь собой», границы свободы, сопротивление хаосу потребления, растяжка ума за пределы привычного.*
+
+### Уровень 1 — В точку (self-sculpting, границы свободы, сопротивление)
+
+1. **[Let's ditch the dangerous idea that life is a story](https://aeon.co/essays/let-s-ditch-the-dangerous-idea-that-life-is-a-story)** — Galen Strawson, *Aeon*
+   Прямая атака на догму «жизнь — это история, которую ты рассказываешь». Не все живут нарративно, и давление «найти свою историю» разрушительно. Монтень, Ницше, Вулф. **Бьет прямо в тезис против «будь собой».**
+
+2. **[When did the self-help movement lose its ethical seriousness?](https://aeon.co/essays/when-did-the-self-help-movement-lose-its-ethical-seriousness)** — Jennifer Ratner-Rosenhagen, *Aeon*
+   От стоиков через Монтеня, Франклина, Джеймса и Ницше к современному self-help. Почему раньше «работа над собой» была этическим проектом, а теперь — продуктивность и «счастье». **Почему «будь собой» — пустота.**
+
+3. **[Thought-tinkering: the Korean German philosopher Byung-Chul Han](https://aeon.co/essays/thought-tinkering-the-korean-german-philosopher-byung-chul-han)** — Josh Cohen, *Aeon*
+   Общество достижений: не «ты должен», а «ты можешь» — и выгораешь в гонке с собой. Self-exploitation без внешнего надсмотрщика. **Бьет в «противиться хаосу потребления» с неожиданного угла.**
+
+4. **[I attend, therefore I am: You are only as strong as your powers of attention](https://aeon.co/essays/what-is-the-self-if-not-that-which-pays-attention)** — Carolyn Dicey Jennings, *Aeon*
+   Я — это не история и не иллюзия. Я — то, чему ты уделяешь внимание. Внимание как поле битвы за самость. **Бьет в «искать себя в мыслях» — но переворачивает вопрос.**
+
+5. **[Günther Anders, a forgotten prophet for the 21st century](https://aeon.co/essays/gunther-anders-a-forgotten-prophet-for-the-21st-century)** — Audrey Borowski, *Aeon*
+   Философ, предсказавший техно-тоталитаризм и потерю агентности. «Прометеев разрыв» — неспособность вообразить последствия того, что производим. **Выход за пределы привычного контекста.**
+
+### Уровень 2 — Границы свободы (судьба vs воля)
+
+6. **[The House Always Wins: Boethius, Cicero and the Gamble of Fate](https://antigonejournal.com/2025/06/boethius-cicero-gamble-fate/)** — Matthew Gluckman, *Antigone*
+   Судьба, случай, провидение и человеческая свобода. Боэций vs Цицерон: где граница между тем, что от нас зависит, и тем, что нет? От Франца Фердинанда до квантовой механики. **Прямой ответ на «где границы нашей свободы».**
+
+7. **[Do We Have Free Will? Maybe It Doesn't Matter](https://nautil.us/do-we-have-free-will-maybe-it-doesnt-matter-238178)** — *Nautilus*
+   Что если вопрос свободы воли не важен? Мета-анализ ~150 исследований о том, как вера/неверие в свободу воли меняет поведение. **Нейронаука + философия, без попсы.**
+
+### Уровень 3 — Растяжка ума (за пределами текущего контекста)
+
+8. **[What if your consciousness is an illusion created by your brain?](https://aeon.co/essays/what-if-your-consciousness-is-an-illusion-created-by-your-brain)** — Keith Frankish, *Aeon*
+   Иллюзионизм: сознание — не то, чем кажется. Мозг создает упрощенную модель, и квалиа — часть интерфейса, а не реальности. **Провокация для ума.**
+
+9. **[Lucretius and the Religion of Materialism](https://antigonejournal.com/2025/06/lucretius-and-the-religion-of-materialism/)** — Henryk Elzenberg, *Antigone*
+   Как сохранить духовную жизнь внутри материалистического мировоззрения. Лукреций как выход за пределы и стоицизма, и религии. **Неожиданный ракурс.**
+
+10. **[How humanity moved from 'eternal' to 'bookended' time](https://aeon.co/essays/how-humanity-moved-from-eternal-to-bookended-time)** — *Aeon*
+    Как человечество сменило концепцию времени — от вечности к «времени с началом и концом». Космическая перспектива без поп-клише. **Выход на масштаб вселенной.**
+
+---
+
 # 🎯 Подробная карта направлений (Way of Life)
 
 ## 1. Жесткий стоицизм и античная практика
