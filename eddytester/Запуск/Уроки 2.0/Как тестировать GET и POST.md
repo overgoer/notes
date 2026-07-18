@@ -44,18 +44,25 @@
   `?status=candidate&limit=10`
 
 ---
+![[Pasted image 20260718210556.png]]
+---
 <div align="left">
 
-## 🧠 Что тестировать в GET (Чек-лист PRO)
-
-##### 1. Фильтрация и Регистр символов (Case Sensitivity)
-+ Как поведет себя сервер, если отправить `?status=Candidate` или `?status=CANDIDATE` вместо `candidate`?  
-
+## 🧠 Что тестировать в GET
+---
+##### 1. Фильтрация и Регистр символов
+- Как поведет себя сервер, если отправить <br>
+  `?status=Candidate` 
+  <br>или <br>
+  `?status=CANDIDATE`
+  <br>
+  вместо `candidate`?  
+---
 ##### 2. Грязные данные (Invalid Input)
-+ Отправьте `?status=banana`. Вернет ли сервер ошибку `400 Bad Request` или вернет пустой список `200 OK []`?
-
+- Отправьте `?status=banana`. Вернет ли сервер ошибку `400 Bad Request` или вернет пустой список `200 OK []`?
+---
 ##### 3. Перечисление через запятую (Multiple Values)
-+ Попробуйте `?status=minor,candidate`. Сервер должен вернуть оба типа или выдать ошибку?
+- Попробуйте `?status=minor,candidate`. Сервер должен вернуть оба типа или выдать ошибку?
 
 ---
 <div align="left">
