@@ -150,32 +150,3 @@ GROUP BY status;
 > Ответ от сервера может вернуть код `200 OK`, но только прямой запрос в БД покажет, сохранились ли данные правильно.
 
 ### Сверяй каждый запрос к API с состоянием твоей базы данных!
-
-
-  curl -X POST https://practicum.eddytester.com/webhook/yookassa \                                                      
-
-    -H 'Content-Type: application/json' \                                                                               
-
-    -d '{                                                                                                               
-
-      "type": "notification",                                                                                           
-
-      "event": "payment.succeeded",                                                                                     
-
-      "object": {                                                                                                       
-
-        "id": "test-'$(date +%s)'",                                                                                     
-
-        "status": "succeeded",                                                                                          
-
-        "amount": {"value": "10.00", "currency": "RUB"},                                                                
-
-        "metadata": {                                                                                                   
-
-          "email": "eddie.burenkin@yandex.ru"                                                                               
-
-        }                                                                                                               
-
-      }                                                                                                                 
-
-    }'
