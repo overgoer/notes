@@ -127,12 +127,15 @@
 ![[Pasted image 20260721234331.png]]
 
 ---
-![[Pasted image 20260721234502.png]]
+![[Pasted image 20260721235340.png|300]]
 
-|  **PATCH**  | {"id":233,"name":"John"} |<br>
-**PUT**
- ![[Pasted image 20260721235010.png|200]] |
-| **PATCH** | 🟡 В работе | 
+ТЕЛО ЗАПРОСА <br>
+![[Pasted image 20260721234502.png|300]]
+
+**PATCH**<br>
+![[Pasted image 20260721235531.png|300]]
+**PUT**<br>
+![[Pasted image 20260721235010.png|300]]
 ---
 <div align="left">
 
