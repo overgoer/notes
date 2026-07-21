@@ -124,22 +124,11 @@
 - Что такое CRUD?
 - PUT vs PATCH
 ---
-{
-	"id":233,
-	"name":"John",
-	"age":25,
-	"pet": "cat"
-}
+![[Pasted image 20260721234331.png]]
 
-{
-	"id":233,
-	"name":"John"
-}
+---
+![[Pasted image 20260721234502.png]]
 
-{
-	"id":233,
-	"name":"John"
-}
 
 
 |  **PATCH**  | {"id":233,"name":"John"} | Приоритет | Исполнитель | Срок | Ожидаемый результат |
