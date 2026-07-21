@@ -122,7 +122,24 @@
 ---
 - Параметры в ссылке запроса и часть path \ endpoint
 - Что такое CRUD?
-- 
+- PUT vs PATCH
+---
+{
+	"id":233,
+	"name":"John",
+	"age":25,
+	"pet": "cat"
+}
+
+{
+	"id":233,
+	"name":"John"
+}
+
+{
+	"id":233,
+	"name":"John"
+}
 ---
 <div align="left">
 
