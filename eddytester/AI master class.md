@@ -43,6 +43,38 @@
 
 ---
 
+## Поиск в интернете и генерация картинок
+
+### ИИ умеет гуглить — два пути
+- **Встроенный поиск в чатах:** DeepSeek (кнопка «Поиск», без VPN), Qwen, Gemini (Google Search grounding в AI Studio, VPN)
+- **Свой инструмент с поиском:** Open WebUI / Cherry Studio — поиск подмешивается в ответ модели
+
+### SearXNG + MCP — свой поиск для AI
+- **SearXNG** (searxng.github.io) — метапоиск в одном контейнере: агрегирует Bing/Yandex/DDG без API-ключей, бесплатно навсегда; из РФ — движки Bing/Yandex (Google недоступен)
+- **MCP-searxng** (github.com/SecretiveShell/MCP-searxng) — мост: `claude mcp add searxng npx -y @secretiveshell/mcp-searxng` → Claude Code / Cherry Studio
+- Готовые поисковые MCP без self-host: **Tavily** (фритир 1000 запр/мес, официальный MCP), **Brave Search** (2000/мес), **Firecrawl** (поиск + скрейп страниц)
+- Без MCP вообще: **Gemini CLI** — встроенный Google Search grounding на фритире AI Studio
+
+### Легче всего нубу поднять у себя: Open WebUI
+- Один контейнер (версия `:ollama` — с моделью внутри, ничего больше ставить не надо):
+  `docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:ollama`
+- Внутри из коробки: чат (Ollama / любой API-ключ), RAG по своим докам
+- **Поиск:** Settings → Web Search → SearXNG или Google PSE
+- **Картинки:** Settings → Images → AUTOMATIC1111 / ComfyUI / OpenAI-совместимый image API (напр. SiliconFlow)
+- Без Docker, ещё проще: **Cherry Studio** (cherry-ai.com) — десктоп-приложение, DeepSeek/Ollama/Gemini, встроенный веб-поиск
+
+Честная сложность: текст — тривиально; поиск и картинки — средняя (нужен SearXNG рядом или API-ключ).
+
+### Картинки бесплатно из РФ
+- **Fusion Brain** (fusionbrain.ai) — Kandinsky от Сбера, без VPN
+- **Shedevrum / Yandex ART** — без VPN
+- **SiliconFlow** (siliconflow.com) — FLUX / SDXL по API, фритир
+- **Pollinations** — вообще без ключа: `image.pollinations.ai/prompt/...`
+- **Bing Image Creator** (bing.com/images/create) — бесплатный DALL-E
+- Локально: **Draw Things** (Mac) / **Fooocus** (Win)
+
+---
+
 ## Скиллы
 
 1. **Структура промпта:** роль → контекст → задача → формат → примеры (few-shot)
