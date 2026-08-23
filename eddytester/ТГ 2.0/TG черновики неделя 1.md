@@ -84,7 +84,42 @@
 Пример - обязателен ВСЕГДА.
 Важное - не прятать.
 
+С чего начать:
+▎ Diátaxis - 4 типа доки, не смешивать: diataxis.fr
+▎ Готовые шаблоны: thegooddocsproject.dev
+▎ Бесплатные курсы Google по техписьму: developers.google.com/tech-writing
+▎ Доклад «What nobody tells you about documentation» - на YouTube
+
+Полный список с подкастами и стилями - в комментарии 👇
+
 У вас документация помогает или это квест «догадайся сам»?
+
+---
+
+### Комментарий-подборка (вставить первым комментом сразу после публикации)
+
+Полный список, сохраняйте:
+
+Фреймворки:
+▎ Divio Documentation System - documentation.divio.com - прародитель Diátaxis, коротко
+▎ Docs-as-Code - writethedocs.org/guide/docs-as-code/
+
+Курсы:
+▎ Documenting APIs, Tom Johnson - idratherbewriting.com/learnapidoc - лучший бесплатный курс именно про API-доки
+▎ GitLab Technical Writing Fundamentals - about.gitlab.com/handbook/product/ux/technical-writing/fundamentals/
+
+Подкасты:
+▎ API The Docs - apithedocs.org - именно про API-документацию
+▎ Write the Docs Podcast - podcast.writethedocs.org
+
+Стили:
+▎ Google developer docs style guide - developers.google.com/style
+▎ Microsoft Writing Style Guide - learn.microsoft.com/style-guide
+
+На что равняться:
+▎ Stripe API docs - stripe.com/docs/api
+▎ MDN Web Docs - developer.mozilla.org
+▎ Django docs - docs.djangoproject.com
 
 ## Пост 1 — материалы для рекомендации (кураторская подборка, 23.08)
 
