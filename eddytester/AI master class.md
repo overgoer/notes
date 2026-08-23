@@ -115,10 +115,13 @@
 | Провайдер | Что даёт | VPN |
 |---|---|---|
 | Google AI Studio (aistudio.google.com) | Gemini Flash — щедрый фритир, API-ключ | да (мой туннель) |
+| Hugging Face Inference API (huggingface.co) | любые open-модели (Llama, Qwen, Mistral, FLUX), ~1000 запр/день | да (или зеркало hf-mirror.com: `HF_ENDPOINT=https://hf-mirror.com`) |
 | GitHub Models + Copilot Free (github.com/marketplace/models) | GPT-4o-mini, Llama, Phi… | нет |
 | NVIDIA NIM (build.nvidia.com) | DeepSeek-R1, Llama, Qwen — 40 запр/мин | нет |
 | Cloudflare Workers AI (developers.cloudflare.com/workers-ai) | 10K нейронов/день | нет |
 | OpenRouter :free (openrouter.ai/models?max_price=0) | 50 запр/день (1000 при $10 на счёте) | нет |
+| SiliconFlow (siliconflow.com) | Qwen/DeepSeek/Llama + FLUX/SDXL картинки, фритир | нет |
+| ModelScope (modelscope.cn, Alibaba) | бесплатный inference API на Qwen и др. | нет |
 | Groq (groq.com) / Cerebras (inference.cerebras.ai) | быстрый Llama-инференс | да |
 
 ### Уровень 2 — копеечные API (мой стек)
