@@ -86,6 +86,41 @@
 
 У вас документация помогает или это квест «догадайся сам»?
 
+## Пост 1 — материалы для рекомендации (кураторская подборка, 23.08)
+
+> Слабое место поста: нет чёткой рекомендации. Собрано для фильтрации Эдди, в пост пойдут 2-3.
+
+### Фреймворки и подходы (ядро)
+- **Diátaxis** — https://diataxis.fr — фреймворк: 4 типа доки (tutorial / how-to / reference / explanation), не смешивать. Принят CPython, Django, FastAPI, GitHub docs. Золотой стандарт
+- **The Good Docs Project** — https://thegooddocsproject.dev/ — готовые шаблоны: API reference, how-to, quickstart. «Бери и используй», прямо лечит боль поста
+- **Divio Documentation System** — https://documentation.divio.com/ — прародитель Diátaxis, короткий мануал
+- **Docs-as-Code** — https://www.writethedocs.org/guide/docs-as-code/ — доки в git рядом с кодом
+
+### Курсы (бесплатно)
+- **Google Technical Writing One + Two** — https://developers.google.com/tech-writing — два бесплатных курса, практичные (это то, чем учат самих гуглеров)
+- **Documenting APIs (Tom Johnson)** — https://idratherbewriting.com/learnapidoc/ — лучший бесплатный курс именно про API-доки
+- **GitLab Technical Writing Fundamentals** — https://about.gitlab.com/handbook/product/ux/technical-writing/fundamentals/
+
+### Видео и доклады
+- **Daniele Procida: «What nobody tells you about documentation»** — https://www.youtube.com/watch?v=t4vKPhjcMZg — автор Diátaxis, один из лучших докладов про доки вообще
+- **Write the Docs conference** — https://www.youtube.com/@writethedocs — записи конференций, копать по темам
+
+### Подкасты
+- **API The Docs** — https://apithedocs.org/ — матёрый подкаст именно про API-документацию
+- **Write the Docs Podcast** — https://podcast.writethedocs.org/
+
+### Стили (для стандартизации)
+- **Google developer documentation style guide** — https://developers.google.com/style
+- **Microsoft Writing Style Guide** — https://learn.microsoft.com/en-us/style-guide/welcome/
+
+### Примеры-эталоны (на что равняться)
+- Stripe API docs — https://stripe.com/docs/api — интерактивные примеры, quickstart
+- MDN Web Docs — https://developer.mozilla.org/
+- Django docs — https://docs.djangoproject.com/
+
+### Наблюдение для лид-магнита
+Русскоязычных матёрых гайдов по доке почти нет — ниша пустая. Свой гайд «как писать доки для API» = лид-магнит (идея уже в парковке хаба).
+
 ## Пост 2 — лайфхак: Postman Interceptor (Сб 29.08, 07:00)
 
 > Из накидок Эдди: «postman как перехватчик запросов, расширение для проброса куки». ПЕРЕД ПУБЛИКАЦИЕЙ проверить механику на своей машине (расширение + вкладка Interceptor в Postman).
