@@ -74,4 +74,13 @@
 
 !!помимо правки доки и кода помни что есть шпаргалка по багм для учеников  html - надо ее тодже проверить и проапдейтить
 
+## Выполнено (24.08)
+
+- ✅ v1 GET /users/:id: несуществующий → 200 {} (баг добавлен в код, тест обновлён, 78/78)
+- ✅ post-users: p_status_17 перевёрнут («17 → candidate, должен minor»), p_age_17 заменён («Возраст 17 отклоняется (400)»), добавлен p_age_under_17 в correct
+- ✅ delete-user: d_wrong_code → дистрактор, d_not_found → correct, добавлен d_no_user_body в correct
+- ✅ bugs.html: добавлена карточка «200 с пустым телом»; bugs.md: BUG_POST_USERS_002 приведён к факту (400, не candidate)
+- ✅ Всё проверено вживую: 200 {}, 400 для age=10, DELETE без user, конфиги в /get-progress
+- Ветка feat/v1-doc-alignment (v0-test-api) на проде, ждёт мерджа
+
 Все ⏳ закрыты проверками 24.08: u_string_id ✓ баг, h_name_special ✓ баг, h_no_status_retired ✓ баг (PATCH 66 → ответ без status), d_no_key_filter ✓ баг (чужой ключ удаляет).
